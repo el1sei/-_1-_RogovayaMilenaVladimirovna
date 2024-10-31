@@ -1,0 +1,226 @@
+/* Основные настройки для body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+/* Стили для header */
+.header {
+    display: flex;
+    height: 80px;
+    padding: 0 64px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+/* Стили для nav-field */
+.nav-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+/* Верхняя линия в nav-field */
+.line-top-hide {
+    display: flex;
+    padding: 0 32px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.line-top-rect {
+    width: 1088px;
+    height: 0.3px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.00);
+}
+
+/* Стили для кнопок навигации */
+.nav-buttons {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-text, .separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    user-select: none;
+}
+
+/* Hover эффект для текста */
+.nav-text:hover {
+    color: #B1D690;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+/* Нижняя линия в nav-field */
+.line-bottom {
+    display: flex;
+    padding: 0 32px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.line-bottom-rect {
+    width: 1088px;
+    height: 0.3px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.10);
+}
+
+/* Стили для content */
+.content {
+    display: flex;
+    padding: 0 64px 64px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+/* Стили для content-title */
+.content-title {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Стили для content-block */
+.content-block {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    background: rgba(177, 214, 144, 0.18);
+    backdrop-filter: blur(20px);
+    flex-wrap: wrap;
+}
+
+.content-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    align-self: stretch;
+    width: 100%;
+
+}
+
+.text {
+    flex: 1 0 0;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-break: break-word;
+}
+/* Стили для блока с фото */
+.block-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+/* Стили для фото */
+/* Стили для фото */
+.photo {
+    width: 100%;
+    height: auto;
+    background: lightgray 50% / contain no-repeat;
+    background-color: transparent;
+}
+
+
+/* Стили для подписи */
+.caption {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Стили для текста в подписи */
+.caption-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-break: break-word;
+}
+
+.text-next {
+
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+
+}
+
+.content-text-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    align-self: stretch;
+}
+
+a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет от родителя */
+}
