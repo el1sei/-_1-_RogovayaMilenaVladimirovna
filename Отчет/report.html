@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница отчета</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-field">
+            <div class="line-top-hide">
+                <div class="line-top-rect"></div>
+            </div>
+            <div class="nav-buttons">
+                <a href="main.html"><div class="nav-text">Титульный лист</div></a>
+                <div class="separator">|</div>
+                <a href="report.html"><div class="nav-text">Отчет</div></a>
+                <div class="separator">|</div>
+                <a href="findings.html"><div class="nav-text">Выводы</div></a>
+            </div>
+            <div class="line-bottom">
+                <div class="line-bottom-rect"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content-title">
+            <div class="title-text">Отчёт</div>
+        </div>
+		<div class="content-block">
+		    <div class="content-text">
+		        <span class="text">· Полное изображение топологии</span>
+		    </div>
+		    <div class="block-photo">
+		        <img class="photo" src="img/вся.jpg" alt="#" />
+		        <div class="caption">
+		            <div class="caption-text">Полное изображение топологии</div>
+		        </div>
+		    </div>
+		</div>
+        <div class="content-block">
+            <div class="content-text">
+                <span class="text">· Снимки экрана с комментариями</span>
+            </div>
+            <div class="block-photo">
+                <img class="photo" src="img/пк1.jpg" alt="#" />
+                <div class="caption">
+                    <div class="caption-text">Нажатием на иконку пк с именем host_1 открываем меню и выбираем вкладку Desktop, переходим в IP Configuration</div>
+                </div>
+            </div>
+            <div class="block-photo">
+                <img class="photo" src="img/пк2.jpg" alt="#" />
+                <img class="photo" src="img/пк3.jpg" alt="#" />
+
+                <div class="caption">
+                    <div class="caption-text">В строку IPv4 Address вводим ip адрес компьютера, в качестве 3го октета используя номер по порядку в группе, и маску подсети. Также устанавливаем Default Gateway чтобы можно было направить трафик через маршрутизатор в другие сети. Так проделываем со всеми 4мя пк с нужными ip и масками подсети, Default Gateway. Во второй сети комутатора FastEthernet0/1 поднимаем число 3го октета IPv4 на 1 тк это другая подсеть. В меню Config по кнопке Settings можно поменять название устройства.</div>
+                </div>
+            </div> 
+            <div class="block-photo">
+                <img class="photo" src="img/марш1.jpg" alt="#" />
+
+                <div class="caption">
+                    <div class="caption-text">Нажатием на иконку маршрутизатора R1 меняем его название на фамилию во вкладке Config в разделе Settings.</div>
+                </div>
+            </div> 
+            <div class="block-photo">
+                <img class="photo" src="img/марш2.jpg" alt="#" />
+
+                <div class="caption">
+                    <div class="caption-text">В разделе INTERFACE выбираем подсеть FastEthernet0/0 и в пунктах IPv4 Address и Subnet Mask вводим необходимые значения, в 3м октете меняя значение на порядковый номер в группе. Так же делаем и с FastEthernet0/1 (второй подсетью). Когда мы настраивали пк в Default Gateway мы указывали именно тот шлюз , который сейчас мы указываем у маршрутизатора для настройки подсети. Теперь мы можем взаимодействовать между подсетями. </div>
+                </div>
+            </div>  
+            <div class="block-photo">
+                <img class="photo" src="img/пинг1.jpg" alt="#" />
+
+                <div class="caption">
+                    <div class="caption-text">Чтобы проверить связаность между сетями командой ping откроем Command line interface (CLI) во вкладке Desktop пункт Command Prompt. </div>
+                </div>
+            </div>  
+            <div class="block-photo">
+                <img class="photo" src="img/пинг 2.jpg" alt="#" />
+
+                <div class="caption">
+                    <div class="caption-text">Переместим курсор в поле консоли и кликнув по ней вводим команду "ping 172.16.11.20". Так как мы выполняем команду с пк host_1 первой подсети , то образаемся мы ко второй подсети. Нажимаем Enter и команда выполняется. </div>
+                </div>
+            </div>    
+            <div class="block-photo">
+                <img class="photo" src="img/пинг3.jpg" alt="#" />
+
+                <div class="caption">
+                    <div class="caption-text">После некоторого ожидания мы видем об успешном ответе о получении 4 из 4 отправленых пакетов. Связь была проверена. Топология работает. </div>
+                </div>
+            </div>  
+
+        </div>
+        <div class="content-block">
+            <div class="content-text-next">
+                <a href="findings.html"><span class="text-next">Перейти к выводам</span></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
